@@ -1,4 +1,4 @@
-package demoGame;
+package game;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -77,8 +77,8 @@ public class Game extends javax.swing.JFrame implements KeyListener {
         initComponents();
         panel1.addKeyListener(this);
         panel1.setFocusable(true);
-        icon0 = new javax.swing.ImageIcon(getClass().getResource("/Imagenes/trex1.png"));
-        icon1 = new javax.swing.ImageIcon(getClass().getResource("/Imagenes/trex2.png"));
+        icon0 = new javax.swing.ImageIcon(getClass().getResource("/assets/trex1.png"));
+        icon1 = new javax.swing.ImageIcon(getClass().getResource("/assets/trex2.png"));
         set0();
     }
     /**
@@ -96,7 +96,8 @@ public class Game extends javax.swing.JFrame implements KeyListener {
         recordL.setVisible(false); recordB.setVisible(false);
         trex.setVisible(false);
         cactus1.setVisible(false);
-        startB.setVisible(true); creditsB.setVisible(true); howtoplayB.setVisible(true); bye.setVisible(true);
+        startB.setVisible(true); creditsB.setVisible(true); howtoplayB.setVisible(true);
+        //bye.setVisible(true);
         titleB.setVisible(true);
         etapa=0; puntos=0;
         trex.setIcon(icon1);
@@ -231,7 +232,6 @@ public class Game extends javax.swing.JFrame implements KeyListener {
         startB = new javax.swing.JButton();
         howtoplayB = new javax.swing.JButton();
         cactus1 = new javax.swing.JLabel();
-        bye = new javax.swing.JButton();
         recordL = new javax.swing.JLabel();
         recordB = new javax.swing.JTextField();
         pauseB = new javax.swing.JButton();
@@ -247,10 +247,10 @@ public class Game extends javax.swing.JFrame implements KeyListener {
 
         panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        trex.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/trex1.png"))); // NOI18N
+        trex.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/trex1.png"))); // NOI18N
         panel1.add(trex, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 80, 100));
 
-        piso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/suelo.png"))); // NOI18N
+        piso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/suelo.png"))); // NOI18N
         panel1.add(piso, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 600, 50));
 
         startB.setBackground(new java.awt.Color(204, 0, 0));
@@ -275,19 +275,8 @@ public class Game extends javax.swing.JFrame implements KeyListener {
         });
         panel1.add(howtoplayB, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, -1, -1));
 
-        cactus1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cactus1.png"))); // NOI18N
+        cactus1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/cactus1.png"))); // NOI18N
         panel1.add(cactus1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 390, -1, 50));
-
-        bye.setBackground(new java.awt.Color(204, 0, 0));
-        bye.setFont(new java.awt.Font("Candara Light", 1, 18)); // NOI18N
-        bye.setForeground(new java.awt.Color(255, 255, 255));
-        bye.setText("X");
-        bye.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                byeActionPerformed(evt);
-            }
-        });
-        panel1.add(bye, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, -1, -1));
 
         recordL.setFont(new java.awt.Font("Candara Light", 1, 18)); // NOI18N
         recordL.setText("Record");
@@ -334,7 +323,7 @@ public class Game extends javax.swing.JFrame implements KeyListener {
         });
         panel1.add(menuB, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        titleB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/titulo1.png"))); // NOI18N
+        titleB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/titulo1.png"))); // NOI18N
         panel1.add(titleB, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 400, 50));
 
         againB.setBackground(new java.awt.Color(204, 0, 0));
@@ -359,7 +348,7 @@ public class Game extends javax.swing.JFrame implements KeyListener {
         });
         panel1.add(creditsB, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, -1, -1));
 
-        bigDino.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/trex3.png"))); // NOI18N
+        bigDino.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/trex3.png"))); // NOI18N
         panel1.add(bigDino, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 360, 380));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -375,14 +364,8 @@ public class Game extends javax.swing.JFrame implements KeyListener {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    /**
-     * Finaliza la ejecución del programa.
-     * @param evt ActionEvent recibido por el JButton bye.
-     */
-    private void byeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_byeActionPerformed
-        fin=true; dispose();
-    }//GEN-LAST:event_byeActionPerformed
-    /**
+
+   /**
      * Regresa al jugador a la pantalla inicial.
      * @param evt ActionEvent recibido por el JButton menuB.
      */
@@ -473,7 +456,6 @@ public class Game extends javax.swing.JFrame implements KeyListener {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton againB;
     private javax.swing.JLabel bigDino;
-    private javax.swing.JButton bye;
     private javax.swing.JLabel cactus1;
     private javax.swing.JButton creditsB;
     private javax.swing.JButton howtoplayB;

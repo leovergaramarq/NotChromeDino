@@ -42,7 +42,7 @@
         <Component class="javax.swing.JLabel" name="trex">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/trex1.png"/>
+              <Image iconType="3" name="/assets/trex1.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -54,7 +54,7 @@
         <Component class="javax.swing.JLabel" name="piso">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/suelo.png"/>
+              <Image iconType="3" name="/assets/suelo.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -110,34 +110,12 @@
         <Component class="javax.swing.JLabel" name="cactus1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/cactus1.png"/>
+              <Image iconType="3" name="/assets/cactus1.png"/>
             </Property>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="540" y="390" width="-1" height="50"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="bye">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="cc" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Candara Light" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="X"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="byeActionPerformed"/>
-          </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="550" y="10" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -257,7 +235,7 @@
         <Component class="javax.swing.JLabel" name="titleB">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/titulo1.png"/>
+              <Image iconType="3" name="/assets/titulo1.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -313,7 +291,7 @@
         <Component class="javax.swing.JLabel" name="bigDino">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/trex3.png"/>
+              <Image iconType="3" name="/assets/trex3.png"/>
             </Property>
           </Properties>
           <Constraints>

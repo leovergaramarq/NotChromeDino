@@ -1,4 +1,4 @@
-package demo; import demoGame.Game;
+package main; import game.Game;
 /**
  * Clase Main.
  * <p>
