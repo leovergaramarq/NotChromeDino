@@ -1,8 +1,6 @@
 
 # NotChromeDino
-Game simulation for Chrome's T-Rex Dinosaur Game. Dodge as many cacti as possible as you stablish your best score.
-
-Flutter-based prototype application for B2C business model. This prototype simulates the visualization, subscription and payment of services provided by small and medium businesses.
+Game simulation for Chrome's T-Rex Dinosaur Game. Dodge as many cacti as possible as you stablish your best score!
 
 <img src="https://raw.githubusercontent.com/LeonardoVergara/NotChromeDino/main/.github/images/menu.png" width="400">
 
