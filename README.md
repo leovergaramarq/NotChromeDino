@@ -17,7 +17,7 @@ Game simulation for Chrome's T-Rex Dinosaur Game. Dodge as many cacti as possibl
 
 You can clone this repsitory to get the source code
 
-    git clone https://github.com/LeonardoVergara/NotChromeDino.git
+    git clone https://github.com/vergaraldvm/NotChromeDino.git
 
 ## Usage
 
